@@ -7,7 +7,7 @@ export default function SocialIcons ({item}) {
     <div className={styles.links}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <Image 
-        alt={name} 
+        alt="social uímage" 
         src={image}
         width={50}
         height={50} />

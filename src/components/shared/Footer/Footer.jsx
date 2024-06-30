@@ -24,13 +24,15 @@ export default function Footer () {
         </div>
 
         <div className={styles.icon}>
-          <ul className={styles.schedule}>
-            Opening hours:
-            <li>Mon-Thu: 16:00-22:00</li>
-            <li> Fri: 16:00-23:00</li>
-            <li> Sat: 14:00-23:00</li>
-            <li>Sun: 14:00-21:00</li>
-          </ul>
+          <div className={styles.icon}>
+            <ul className={styles.schedule}>
+              Opening hours:
+              <li>Mon-Thu: 16:00-22:00</li>
+              <li> Fri: 16:00-23:00</li>
+              <li> Sat: 14:00-23:00</li>
+              <li>Sun: 14:00-21:00</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
