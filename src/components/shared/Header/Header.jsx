@@ -12,7 +12,9 @@ export default function Header ()  {
       <div  className={styles.container}>
         <ReservationButton/>
       </div>
+      <div className={styles.burger}>
         <BurgerMenu />
+      </div>
     </header>
   );
 }
