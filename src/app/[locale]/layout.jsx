@@ -12,7 +12,7 @@ export const metadata = {
   title: "Ravintola Oda",
   description: "New Georgian Restaurant in Helsinki",
   icons: {
-    icon: ["/favicons/favicon.svg"],
+    icon: ["/images/logo.png"],
   },
 };
 
