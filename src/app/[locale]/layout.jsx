@@ -6,7 +6,7 @@ import Header from '../../components/shared/Header/Header';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
-// import UseAlert from "@/src/components/shared/UseAlert/UseAlert";
+
 
 export const metadata = {
   title: "Ravintola Oda",
@@ -27,7 +27,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
             {children}
             <Footer />
             {/* <CookiesModal /> */}
-            {/* <UseAlert/> */}
+
           </div>
         </NextIntlClientProvider>
         <NextTopLoader

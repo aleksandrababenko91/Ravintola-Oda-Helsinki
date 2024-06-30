@@ -9,15 +9,14 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  color: var.$secondary-black;
+  background-color: var.$primary-primary;
   width: 100%;
   top: 0;
   padding: 0 10vw;
   @include mixin.apply-font-styles(var.$text-16-font);
-  transition: 0.5s height;
+  transition: 3.5s height;
 
   .navigation {
-
     position: absolute;
     top: 0;
     padding: 2rem 0 0 0;
@@ -32,7 +31,7 @@
       border: none;
       font-size: 1rem;
       cursor: pointer;
-      color:black;
+      color: white;
       transition: 0.5s color;
     }
    
@@ -57,7 +56,7 @@
 
     .burgerMenu {
         content: "";
-        background-color: black;
+        background-color: var.$secondary-white;
         position: absolute;
         width: 55px;
         height: 4px;
@@ -69,7 +68,7 @@
 
     .burgerMenu::after {
       content: "";
-      background-color: #000;
+      background-color: var.$secondary-white;
       position: absolute;
       width: 55px;
       height: 4px;
@@ -80,7 +79,7 @@
     }
     .burgerMenu::before {
       content: "";
-      background-color: #000;
+      background-color: var.$secondary-white;
       position: absolute;
       width: 55px;
       height: 4px;
@@ -97,20 +96,20 @@
 
   .content {
     position: absolute;
-    top: 10vh;
+    top: 20vh;
     display: none;
 
     ul {
       list-style: none;
       li {
-        padding: 1rem 0;
+        padding: 3rem 1rem;
         a {
           font-size: 3rem;
-          color: rgb(127, 127, 127);
+          color: var.$secondary-white;;
           transition: 0.25s color;;
         }
         a:hover {
-          color: rgb(232, 232, 232);
+          color: var.$primary-hover;
           transition: 0.25s color;
         }
       }
@@ -120,7 +119,7 @@
 
 
 .navbar.active {
-  background-color: #000;
+  background-color: var.$primary-fon-burger;
   transition: 0.75s height;
   height: 100vh;
 
@@ -168,7 +167,7 @@
   justify-content: flex-start;
   @include mixin.apply-font-styles(var.$text-16-font);
   width: 100px;
-  height: 40px;
+  height: 100px;
   background-color: transparent;
   cursor: pointer;
   color:black;

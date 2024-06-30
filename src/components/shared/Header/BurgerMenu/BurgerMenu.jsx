@@ -3,8 +3,9 @@
 import styles from './BurgerMenu.module.scss'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import logo from '../../../../../public/images/logo.png'
-import Image from 'next/image';
+import Logo from '../../Logo/Logo';
+
+
 
 export default function Header () {
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -48,22 +49,20 @@ export default function Header () {
       },
     },
   }
-
+  
   return(
     <div className={`${styles.navbar} ${
       burgerMenuActive ? styles.active : ""
-      }`}
+    }`}
     >
         <div className={styles.navigation}>
-          <div className={styles.logoName}>
-          <a href="/">
-              <Image  alt="logo" src={logo} fillsizes="100%" className={styles.logo}/>
-          </a>
-          </div>
+          <div className={styles.logoName}
+          ></div>
+          <Logo/>
           <div 
             className={styles.burgerMenuContainer} 
             onClick={() => toggleBurgerMenu()}
-          >
+            >
             <div className={styles.burgerMenuTrigger}></div>
             <div className={styles.burgerMenu}></div>
           </div>
@@ -73,28 +72,18 @@ export default function Header () {
             variants={motionVariants}
             >
               <motion.li variants={listItemVariants}>
-                <a href="/">Portfolio</a>
+                <a href="/" 
+                target="_blank"
+                rel="noopener noreferrer">
+                Reservation ( QUANDO )</a>  
+                {/* QUANDO */}
               </motion.li>
+
               <motion.li variants={listItemVariants}>
-                <a href="/">For founders</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">For Investors</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">Logo</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">Reading</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">About</a>
+                <a href="/">Menu</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="/">Contact us</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">LinkedIn</a>
               </motion.li>
             </motion.ul>
         </div>

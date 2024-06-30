@@ -1,0 +1,61 @@
+@use '../../../styles/variables' as var;
+@use '../../../styles/mixins' as mx;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10rem;
+  padding: 46px 16px;
+  height: fit-content;
+  background: var.$primary-fon;
+  @include mx.apply-font-styles(var.$text-18-font);
+  color: white;
+  min-width: 320px;
+  max-width: 768px;
+  @include mx.media-q("md") {
+    min-width: 768px;
+    max-width: 1366px;
+}
+  @include mx.media-q("xl") {
+
+  min-width: 1366px;
+  max-width: 1920px;
+}
+  @include mx.media-q("xxxl") {
+  min-width: 1920px;
+  max-width: 100%;
+}
+
+
+}
+
+
+
+.icon {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include mx.media-q("xl") {
+    flex-direction: row;
+    gap: 100px;
+
+
+  }
+  @include mx.media-q("xxxl") {
+    flex-direction: column;
+    gap: 20px;
+
+
+  }
+
+  .schedule {
+    @include mx.apply-font-styles(var.$text-16-font);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
