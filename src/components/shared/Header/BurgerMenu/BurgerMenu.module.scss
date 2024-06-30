@@ -10,10 +10,11 @@
   justify-content: flex-start;
   height: fit-content;
   background-color: var.$primary-primary;
+
+
   width: 100%;
   top: 0;
   padding: 0 10vw;
-  @include mixin.apply-font-styles(var.$text-16-font);
   transition: 3.5s height;
 
   .navigation {
@@ -24,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 
     .button {
@@ -96,7 +98,7 @@
 
   .content {
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     display: none;
 
     ul {
@@ -104,8 +106,8 @@
       li {
         padding: 3rem 1rem;
         a {
-          font-size: 3rem;
-          color: var.$secondary-white;;
+          font-size: 1rem;
+          color: var.$secondary-white;
           transition: 0.25s color;;
         }
         a:hover {
@@ -114,7 +116,43 @@
         }
       }
     }
+
+     @include mixin.media-q("xl") {
+     ul {
+       list-style: none;
+       li {
+         padding: 3rem 1rem;
+         a {
+           font-size: 3rem;
+           color: var.$secondary-white;;
+           transition: 0.25s color;;
+         }
+         a:hover {
+           color: var.$primary-hover;
+           transition: 0.25s color;
+         }
+       }
+     }
+   }
+     @include mixin.media-q("md") {
+     ul {
+       list-style: none;
+       li {
+         padding: 3rem 1rem;
+         a {
+           font-size: 2rem;
+           color: var.$secondary-white;;
+           transition: 0.25s color;;
+         }
+         a:hover {
+           color: var.$primary-hover;
+           transition: 0.25s color;
+         }
+       }
+     }
+   }
   }
+
 }
 
 
@@ -165,7 +203,6 @@
   flex-direction: row;
   align-items:flex-start;
   justify-content: flex-start;
-  @include mixin.apply-font-styles(var.$text-16-font);
   width: 100px;
   height: 100px;
   background-color: transparent;
