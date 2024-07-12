@@ -3,7 +3,7 @@
 @use "./null";
 
 body {
-  background-color: var.$primary-fon;
+  background-color: var.$primary-primary;
   &.lock {
     overflow: hidden;
     touch-action: none;

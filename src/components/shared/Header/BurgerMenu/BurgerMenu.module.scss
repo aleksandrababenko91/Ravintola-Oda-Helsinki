@@ -21,7 +21,7 @@
     position: absolute;
     top: 0;
     padding: 5rem 0 0 0;
-    width: calc(100% - 20vw);
+    width: calc(100% - 30vw);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -62,8 +62,8 @@
         content: "";
         background-color: var.$secondary-white;
         position: absolute;
-        width: 55px;
-        height: 4px;
+        width: 35px;
+        height: 2px;
         z-index: 0;
         top: calc(25px / 2 - 1.5px);
         transition: 0.25s transform ease-in-out, 
@@ -74,8 +74,8 @@
       content: "";
       background-color: var.$secondary-white;
       position: absolute;
-      width: 55px;
-      height: 4px;
+      width: 35px;
+      height: 2px;
       transform: translateY(10px);
       z-index: 0;
       transition: 0.25s transform ease-in-out, 
@@ -85,8 +85,8 @@
       content: "";
       background-color: var.$secondary-white;
       position: absolute;
-      width: 55px;
-      height: 4px;
+      width: 35px;
+      height: 2px;
       transform: translateY(-10px);
       z-index: 0;
       transition: 0.25s width ease-in-out, 
