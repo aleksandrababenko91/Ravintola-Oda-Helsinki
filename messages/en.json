@@ -1,10 +1,7 @@
 {
 	"Header": {
-		"main": "Home",
-		"internship": "Internship",
-		"projects": "Projects",
-		"blog": "Blog",
 		"contacts": "Contacts",
-		"btn_support_project": "Donate"
+		"menu": "Menu",
+		"reservation": "Reservation"
 	}
 }

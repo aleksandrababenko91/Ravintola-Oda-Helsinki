@@ -8,15 +8,13 @@ export const socials = [
 
 export const contacts = [
   {
-    text: "ODA Restaurant", 
-  },
-  {
     text: "ravintolaoda@gmail.com"
   },
   { 
-    text: "Laajalahdentie 17 00300, Helsinki",
-  },   
-  { 
     text: "+358(0)4500000",
-  } 
+  } ,
+  { 
+    text: "Laajalahdentie 17 00300, Helsinki",
+  },  
+   
 ];

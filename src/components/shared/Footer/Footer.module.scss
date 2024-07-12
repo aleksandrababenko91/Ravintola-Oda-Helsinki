@@ -6,11 +6,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  padding: 46px 16px;
+  gap: 48px;
+  padding: 60px 64px 24px 64px;
   height: fit-content;
   background: var.$primary-fon;
-  @include mx.apply-font-styles(var.$text-18-font);
+  @include mx.apply-font-styles(var.$h3-font);
   color: white;
   min-width: 320px;
   max-width: 768px;
@@ -38,7 +38,7 @@
 
 
 
-.icon {
+.contacts {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
   }
 
   .schedule {
-    @include mx.apply-font-styles(var.$text-16-font);
+    @include mx.apply-font-styles(var.$h3-font);
 
     display: flex;
     flex-direction: column;

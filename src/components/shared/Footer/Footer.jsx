@@ -1,4 +1,4 @@
-import SocialLinks from '../SocialLinks/SocialLinksLinks';
+import SocialLinks from '../SocialLinks/SocialLinks';
 import ContactLinks from '../ContactLinks/ContactLinks';
 import styles from './Footer.module.scss'
 import { v4 as uuidv4 } from 'uuid';
@@ -9,10 +9,9 @@ import '../../../styles/global.scss';
 
 export default function Footer () {
   return(
-    <footer > 
+    <section > 
       <div className={styles.footer}>
-
-        <div className={styles.icon}>
+        <div className={styles.contacts}>
           {contacts.map((item) => {
             return <ContactLinks key={uuidv4()}  item={item}/>
           })}
@@ -23,7 +22,7 @@ export default function Footer () {
           })}
         </div>
 
-        <div className={styles.icon}>
+        {/* <div className={styles.icon}>
           <div className={styles.icon}>
             <ul className={styles.schedule}>
               Opening hours:
@@ -33,8 +32,8 @@ export default function Footer () {
               <li>Sun: 14:00-21:00</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
-    </footer>
+    </section>
   )
 }

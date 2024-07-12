@@ -1,20 +1,23 @@
-"use client"
+import { useTranslations } from "next-intl";
 
-import BurgerMenu from './BurgerMenu/BurgerMenu';
+import Menu from './Menu/Menu';
 import styles from "./Header.module.scss";
-import ReservationButton from '../ReservationButton/ReservationButton';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
+import Logo from '../Logo/Logo';
 
-
-
-export default function Header ()  {
+const Header = () => {
+  const t = useTranslations("Header");
   return (
     <header className={styles.header}>
-      <div  className={styles.container}>
-        <ReservationButton/>
+      <div className={styles.container}>
+        <Logo />
+        <Menu />
+        <div className={styles.actions}>
+        </div>
       </div>
-      <div className={styles.burger}>
-        <BurgerMenu />
-      </div>
+      <BurgerMenu />
     </header>
   );
-}
+};
+
+export default Header;

@@ -1,18 +1,19 @@
 "use client";
-
-import Image from "next/image";
-import { Link } from '../../../navigation';
+import {Icon} from '../Icon/Icon';
+import Link from 'next/link';
 import styles from './Logo.module.scss';
-import logo from '../../../../public/images/logo.svg';
+import Image from 'next/image';
+import logo from '../../../../public/images/logo.svg'
 
-export default function Logo() {
+export default function Logo({ className}) {
 
   return (
     <Link
-      href={'./'}
-      className={styles.logo}
+      href="/"
+      className={className}
     >
-      <Image width={250} height={250} alt="logo png"  src={logo}/>
+      <Image  src={logo} alt="logo" width={250} height={150}/>
+      {/* <Icon className={styles.logo} name="logo" /> */}
     </Link>
   );
 }

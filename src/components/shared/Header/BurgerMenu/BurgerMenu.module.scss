@@ -20,11 +20,14 @@
   .navigation {
     position: absolute;
     top: 0;
-    padding: 2rem 0 0 0;
+    padding: 5rem 0 0 0;
     width: calc(100% - 20vw);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    @media (min-width: 993px) {
+      display: none;
+    }
 
 
     .button {
@@ -200,8 +203,8 @@
 .logoName {
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
-  justify-content: flex-start;
+  align-items:center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   background-color: transparent;

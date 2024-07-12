@@ -1,9 +1,9 @@
-import Header from "@/components/shared/Header/Header";
+import HeroSection from '../../components/HeroSection/HeroSection'
 
 export default function Home() {
   return (
     <main>
-
+        <HeroSection />
     </main>
   );
 }

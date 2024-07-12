@@ -51,14 +51,8 @@ export default function Header () {
   }
   
   return(
-    <div className={`${styles.navbar} ${
-      burgerMenuActive ? styles.active : ""
-    }`}
-    >
+    <div className={`${styles.navbar} ${burgerMenuActive ? styles.active : ""}`}>
         <div className={styles.navigation}>
-          <div className={styles.logoName}
-          ></div>
-          <Logo/>
           <div 
             className={styles.burgerMenuContainer} 
             onClick={() => toggleBurgerMenu()}

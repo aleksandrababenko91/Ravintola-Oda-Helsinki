@@ -1,4 +1,4 @@
-import styles from './ContactLinks.module.scss';
+import styles from './SocialLinks.module.scss';
 import Image from 'next/image';
 
 export default function SocialIcons ({item}) {
@@ -7,10 +7,12 @@ export default function SocialIcons ({item}) {
     <div className={styles.links}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <Image 
-        alt="social uímage" 
-        src={image}
-        width={50}
-        height={50} />
+          alt={name}
+          src={image}
+          width={50}
+          height={50}
+          className={styles.icon}
+        />
         {text}
       </a>
     </div>

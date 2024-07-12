@@ -1,0 +1,15 @@
+@use "../../../../styles/variables" as var;
+@use "../../../../styles/mixins" as mixin;
+
+
+.menu {
+  @media (min-width: 993px) {
+    display: flex;
+    align-items: center;
+    column-gap: 42px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    @include mixin.apply-font-styles(var.$h3-font);
+  }
+  display: none;
+}

@@ -1,0 +1,7 @@
+@use "../../styles/variables" as var;
+
+.hero{
+  background-color: var.$primary-primary;
+  width: 100%;
+  height: 300px;
+}

@@ -1,10 +1,14 @@
 @use "../../../styles/variables" as var;
 
 
+
   .logo {
     display: block;
-    width: 200px;
-    height: 200px;
-    fill: var.$secondary-white;
+    width: 60px;
+    height: 160px;
+
+    .logo {
+      z-index: 9;
+    }
   }
 
