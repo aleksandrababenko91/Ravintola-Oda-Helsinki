@@ -43,11 +43,11 @@
   .options {
     display: flex;
     flex-direction: column;
-    background-color: var.$primary-primary;
+    background-color: var.$primary-fon;
     width: 65px;
     border-radius: 2px;
     position: absolute;
-    bottom: -80px;
+    bottom: -40px;
     left: 0;
     z-index: 5;
   }
