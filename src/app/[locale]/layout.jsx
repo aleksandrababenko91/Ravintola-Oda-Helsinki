@@ -1,11 +1,10 @@
 import '../../styles/global.scss';
-
-// import CookiesModal from "@/src/components/modals/CookiesModal/CookiesModal";
 import Footer from "../../components/shared/Footer/Footer";
 import Header from '../../components/shared/Header/Header';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
+import Query from '../../components/Provider/Query';
 
 
 export const metadata = {
@@ -21,20 +20,20 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale === "fi" ? "su" : locale}>
       <body>
+        <div className="wrapper">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="wrapper">
+          <Query>
             <Header />
             {children}
             <Footer />
-            {/* <CookiesModal /> */}
-
-          </div>
+        </Query>
         </NextIntlClientProvider>
+        </div>
         <NextTopLoader
             color="#2299DD"
             initialPosition={0.08}
             crawlSpeed={200}
-            height={3}
+            height={2}
             crawl={true}
             showSpinner={true}
             easing="ease"

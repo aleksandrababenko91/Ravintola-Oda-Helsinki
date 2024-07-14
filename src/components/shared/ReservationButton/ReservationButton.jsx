@@ -7,12 +7,15 @@ export default function ReservationButton(){
     window.open('./', '_blank');
   };
   return (
+    <container>
+
     <button
       className={styles.btn_main}
       onClick={openQuandoPage}
 >
       Reservation
     </button>
+  </container>
   );
 };
 

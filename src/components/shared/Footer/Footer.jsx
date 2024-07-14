@@ -9,7 +9,7 @@ import '../../../styles/global.scss';
 
 export default function Footer () {
   return(
-    <section > 
+    <footer > 
       <div className={styles.footer}>
         <div className={styles.contacts}>
           {contacts.map((item) => {
@@ -34,6 +34,6 @@ export default function Footer () {
           </div>
         </div> */}
       </div>
-    </section>
+    </footer>
   )
 }
