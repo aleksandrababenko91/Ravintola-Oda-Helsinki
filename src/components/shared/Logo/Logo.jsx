@@ -3,16 +3,18 @@ import {Icon} from '../Icon/Icon';
 import Link from 'next/link';
 import styles from './Logo.module.scss';
 import Image from 'next/image';
-import logo from '../../../../public/images/logo.svg'
+import logo from '../../../../public/images/logo.svg';
+import clsx from "clsx";
+
 
 export default function Logo({ className}) {
 
   return (
     <Link
       href="/"
-      className={styles.logo}
+      className={clsx(styles.logo, className)}
     >
-      <Image  src={logo} alt="logo" width={100} height={60}/>
+      <Image  src={logo} alt="logo" fill sizes = "100%" relative/>
     </Link>
   );
 }

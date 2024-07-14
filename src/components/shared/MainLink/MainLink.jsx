@@ -7,10 +7,6 @@ const MainLink = ({
   url,
   children,
 }) => {
-
-
-
-
   return (
     <Link href={url} >
       {children}
