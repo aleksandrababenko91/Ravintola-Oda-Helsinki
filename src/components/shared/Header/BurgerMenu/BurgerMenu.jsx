@@ -3,11 +3,14 @@
 import styles from './BurgerMenu.module.scss'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Logo from '../../Logo/Logo';
+import ReservationButton from '../../ReservationButton/ReservationButton';
+import { useTranslations } from "next-intl";
+
 
 
 
 export default function Header () {
+  const t = useTranslations("Header");
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
   const toggleBurgerMenu = () => {
@@ -65,19 +68,15 @@ export default function Header () {
             <motion.ul animate={burgerMenuActive ? 'open' : 'closed'} 
             variants={motionVariants}
             >
-              <motion.li variants={listItemVariants}>
-                <a href="/" 
-                target="_blank"
-                rel="noopener noreferrer">
-                Reservation ( QUANDO )</a>  
-                {/* QUANDO */}
-              </motion.li>
 
               <motion.li variants={listItemVariants}>
-                <a href="/">Menu</a>
+                <a href="/">{t("menu")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="/">Contact us</a>
+                <a href="/">{t("contacts")}</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <ReservationButton />
               </motion.li>
             </motion.ul>
         </div>

@@ -6,20 +6,18 @@
   position: relative;
   overflow: hidden;
   color: var.$secondary-white;
-  padding: 20px 34px;
+  padding: 5px 14px;
   border-radius: 8px;
   cursor: pointer;
   z-index: 2;
   box-shadow: none;
   border: none;
   transition: all var.$transition-duration-base var.$transition-timing-base;
+  @include mx.apply-font-styles(var.$h2-font);
 
   @include mx.media-q("md") {
-    padding: 44px 104px;
-  }
-  @include mx.media-q("xl") {
-    @include mx.apply-font-styles(var.$h1-font);
-
+    padding: 24px 44px;
+    @include mx.apply-font-styles(var.$h3-font);
   }
 
   &::after {
