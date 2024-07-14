@@ -10,10 +10,9 @@ export default function Logo({ className}) {
   return (
     <Link
       href="/"
-      className={className}
+      className={styles.logo}
     >
-      <Image  src={logo} alt="logo" width={250} height={150}/>
-      {/* <Icon className={styles.logo} name="logo" /> */}
+      <Image  src={logo} alt="logo" width={100} height={60}/>
     </Link>
   );
 }

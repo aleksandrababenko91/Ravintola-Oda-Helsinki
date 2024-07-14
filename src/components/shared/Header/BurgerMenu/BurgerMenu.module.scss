@@ -20,7 +20,7 @@
   .navigation {
     position: absolute;
     top: 0;
-    padding: 5rem 0 0 0;
+    padding: 2rem 20px 0 0;
     width: calc(100% - 30vw);
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
         content: "";
         background-color: var.$secondary-white;
         position: absolute;
-        width: 35px;
+        width: 25px;
         height: 2px;
         z-index: 0;
         top: calc(25px / 2 - 1.5px);
@@ -74,7 +74,7 @@
       content: "";
       background-color: var.$secondary-white;
       position: absolute;
-      width: 35px;
+      width: 25px;
       height: 2px;
       transform: translateY(10px);
       z-index: 0;
@@ -85,7 +85,7 @@
       content: "";
       background-color: var.$secondary-white;
       position: absolute;
-      width: 35px;
+      width: 25px;
       height: 2px;
       transform: translateY(-10px);
       z-index: 0;

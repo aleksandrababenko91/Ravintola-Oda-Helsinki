@@ -1,13 +1,16 @@
 @use "../../styles/variables" as var;
 @use "../../styles/mixins.scss" as mx;
 
-.section {
-  //компенсує висоту хедер
-  margin-top: 180px;
-  position: relative;
+.container {
+//HEADER CONTROL THE HEIGHT
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  
-  
+  position: relative;
 
   .buttons {
     width: 100%;
