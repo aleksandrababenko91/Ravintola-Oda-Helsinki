@@ -25,8 +25,8 @@
   @include mx.media-q("xl") {
     @include mx.apply-font-styles(var.$h3-font);
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 120px;
   }
