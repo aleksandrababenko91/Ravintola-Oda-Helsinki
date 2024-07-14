@@ -52,10 +52,24 @@
   }
 }
 
-.logoFooter {
-  width: 120px;
-  height: 120px;
+
+.logoFooter{
+padding-left: 50px;
+@include mx.media-q("md") {
+  padding-left: 0px;
 }
+}
+.logo {
+  position: relative;
+  display: block;
+
+  .img {
+    position: relative;
+    z-index: 9;
+  }
+}
+
+
 
 .schedule {
   @include mx.apply-font-styles(var.$text-16-font);

@@ -5,15 +5,17 @@ import { v4 as uuidv4 } from 'uuid';
 import {contacts} from './items';
 import {socials} from './items';
 import Menu from './Menu/Menu';
-import Logo from '../Logo/Logo';
+import Logo from './Logo/Logo';
 import { useTranslations } from "next-intl";
+
+
 
 export default function Footer () {
   const t = useTranslations("Footer.schedule");
   return(
     <footer className={styles.footer}>
       <div className={styles.logoFooter}>
-        <Logo />
+        <Logo  className={styles.logo}/>
       </div>
         <Menu />
       <div className={styles.contacts}>

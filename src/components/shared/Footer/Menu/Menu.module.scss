@@ -8,6 +8,8 @@
     align-items: flex-start;
     justify-items: flex-start;
     gap: 10px;
+    @include mx.apply-font-styles(var.$text-16-font);
+
     @include mx.media-q("md") {
         gap: 40px;   
     }

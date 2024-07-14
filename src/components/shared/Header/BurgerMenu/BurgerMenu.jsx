@@ -6,9 +6,6 @@ import { useState } from 'react';
 import ReservationButton from '../../ReservationButton/ReservationButton';
 import { useTranslations } from "next-intl";
 
-
-
-
 export default function Header () {
   const t = useTranslations("Header");
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -19,7 +16,7 @@ export default function Header () {
 
   const motionVariants = {
     open: {
-      opaciity: 1,
+      opaciity: 0,
       transition: {
         staggerChildren: 0.1,
         ease: "easeOut",
@@ -68,7 +65,6 @@ export default function Header () {
             <motion.ul animate={burgerMenuActive ? 'open' : 'closed'} 
             variants={motionVariants}
             >
-
               <motion.li variants={listItemVariants}>
                 <a href="/">{t("menu")}</a>
               </motion.li>
