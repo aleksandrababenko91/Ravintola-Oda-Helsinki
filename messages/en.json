@@ -3,5 +3,17 @@
 		"contacts": "Contacts",
 		"menu": "Menu",
 		"reservation": "Reservation"
+	},
+	"Main": {	
+			"reservation": "Reservation"
+},
+"Footer": {
+	"schedule": {
+			"opening": "Opening Hours",
+			"Mon": "Mon-Tue: 16.00-22.00",
+			"Fri": "Fri: 16.00-23.00",
+			"Sat": "Sat: 14.00-23.00",
+			"Sun": "Sun: 14.00-21.00"
 	}
+}
 }

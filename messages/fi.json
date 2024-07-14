@@ -3,5 +3,17 @@
 			"contacts": "Yhteystiedot",
 			"menu": "Menu",
 			"reservation": "Varaa pöytä"
+},
+	"Main": {	
+			"reservation": "Varaa pöytä"
+},
+	"Footer": {
+			"schedule": {
+					"opening": "AUKIOLOAJAT",
+					"Mon": "Ma-Tor: 16.00-22.00",
+					"Fri": "Pe: 16.00-23.00",
+					"Sat": "Sun: 14.00-23.00",
+					"Sun": "La: 14.00-21.00"
+			}
 }
 }

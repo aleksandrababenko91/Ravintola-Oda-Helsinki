@@ -6,10 +6,12 @@ import {contacts} from './items';
 import {socials} from './items';
 import Menu from './Menu/Menu';
 import Logo from '../Logo/Logo';
+import { useTranslations } from "next-intl";
 
 export default function Footer () {
+  const t = useTranslations("Footer.schedule");
   return(
-    <footer  className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.logoFooter}>
         <Logo />
       </div>
@@ -29,11 +31,11 @@ export default function Footer () {
       <div className={styles.schedule}>
         <div className={styles.icon}>
           <ul className={styles.schedule}>
-            Opening hours:
-            <li>Mon-Thu: 16:00-22:00</li>
-            <li> Fri: 16:00-23:00</li>
-            <li> Sat: 14:00-23:00</li>
-            <li>Sun: 14:00-21:00</li>
+            {t("opening")}
+            <li>{t("Mon")}</li>
+            <li> {t("Fri")}</li>
+            <li> {t("Sat")}</li>
+            <li>{t("Sun")}</li>
           </ul>
         </div>
       </div>

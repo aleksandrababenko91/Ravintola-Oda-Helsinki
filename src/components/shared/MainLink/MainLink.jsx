@@ -6,9 +6,11 @@ import styles from "./MainLink.module.scss";
 const MainLink = ({
   url,
   children,
+  className
 }) => {
   return (
-    <Link href={url} >
+    <Link href={url} 
+    className={`${styles.link} ${className}`}>
       {children}
     </Link>
   );
