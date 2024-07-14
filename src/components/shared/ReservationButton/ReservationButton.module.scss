@@ -16,11 +16,11 @@
   @include mx.apply-font-styles(var.$h2-font);
 
   @include mx.media-q("md") {
-    padding: 24px 44px;
+    padding: 34px 44px;
     @include mx.apply-font-styles(var.$h2-font);
   }
   @include mx.media-q("xl") {
-    padding: 44px 64px;
+    padding: 64px 94px;
     @include mx.apply-font-styles(var.$h1-font);
   }
 
