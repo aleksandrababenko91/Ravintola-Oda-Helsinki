@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import MainLink from "../../MainLink/MainLink";
 import { navigationLinks } from "./constants";
 import styles from "./Menu.module.scss";
+import {createKey} from '../../../shared/KeyFunction/KeyFunction';
 
 
 const Menu = () => {
@@ -9,8 +10,8 @@ const Menu = () => {
 
   return (
     <ul className={styles.menu}>
-      {navigationLinks.map(({ url, name, index }) => (
-        <li key={index}>
+      {navigationLinks.map(({ url, name}) => (
+        <li key={createKey()}>
           <MainLink url={url}>
             {t(name)}
           </MainLink>

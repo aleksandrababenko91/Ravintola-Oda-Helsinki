@@ -4,7 +4,7 @@
 .hero {
 //HEADER CONTROL THE HEIGHT
   display: flex;
-  margin-top: 180px;
+  margin-top: 100px;
   padding: 60px 64px;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   @include mx.media-q("md") {
           padding: 100px;
   }
-
-
+  @include mx.media-q("xl") {
+          padding: 200px;
+  }
 }

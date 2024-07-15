@@ -2,7 +2,6 @@
 @use "../../../styles/mixins.scss" as mx;
 
 .btn_main {
-
   position: relative;
   overflow: hidden;
   color: var.$secondary-white;
@@ -16,11 +15,14 @@
   @include mx.apply-font-styles(var.$h2-font);
 
   @include mx.media-q("md") {
-    padding: 34px 44px;
+    margin: 0px 100px;
+    padding: 34px 100px;
     @include mx.apply-font-styles(var.$h2-font);
   }
+
   @include mx.media-q("xl") {
-    padding: 64px 94px;
+    padding: 34px 100px;
+    margin: 0px 150px;
     @include mx.apply-font-styles(var.$h1-font);
   }
 
