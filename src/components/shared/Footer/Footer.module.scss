@@ -58,6 +58,9 @@ padding-left: 50px;
 @include mx.media-q("md") {
   padding-left: 0px;
 }
+// @media (max-width: 993px) {
+//   display: none;
+// }
 }
 .logo {
   position: relative;

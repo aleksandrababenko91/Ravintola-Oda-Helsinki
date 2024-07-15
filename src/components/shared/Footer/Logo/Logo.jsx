@@ -14,7 +14,7 @@ export default function Logo({ className}) {
       href="/"
       className={clsx(styles.logo, className)}
     >
-      <Image  src={logo} alt="logo" fill sizes = "100%" relative/>
+      <Image  src={logo} alt="logo" fill sizes = "100%" />
     </Link>
   );
 }

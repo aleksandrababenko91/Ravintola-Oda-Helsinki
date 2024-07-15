@@ -1,3 +1,5 @@
+"use client"
+
 import SocialLinks from './SocialLinks/SocialLinks';
 import ContactLinks from './ContactLinks/ContactLinks';
 import styles from './Footer.module.scss'
@@ -12,10 +14,15 @@ import { useTranslations } from "next-intl";
 
 export default function Footer () {
   const t = useTranslations("Footer.schedule");
+  const scrollToTop = () => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
   return(
     <footer className={styles.footer}>
       <div className={styles.logoFooter}>
-        <Logo  className={styles.logo}/>
+        <Logo onClick={scrollToTop} className={styles.logo}/>
       </div>
         <Menu />
       <div className={styles.contacts}>
