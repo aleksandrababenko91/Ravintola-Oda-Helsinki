@@ -50,6 +50,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           // speed={200}
           // shadow="0 0 10px #ff62ce,0 0 5px #ff62ce"
         />
+        
       </body>
     </html>
   );
