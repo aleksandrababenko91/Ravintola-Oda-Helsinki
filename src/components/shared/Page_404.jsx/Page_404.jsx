@@ -1,5 +1,4 @@
 import styles from "./PageNotFound.module.scss";
-
 import { useTranslations } from "next-intl";
 
 export const Page_404 = () => {
@@ -10,7 +9,6 @@ export const Page_404 = () => {
       <div className={styles.wrapper}>
         <h1 className={styles.numbers}>404</h1>
         <p>{t('title')}</p>
-
       </div>
     </main>
   );

@@ -15,5 +15,8 @@
 			"Sat": "Sat: 14.00-23.00",
 			"Sun": "Sun: 14.00-21.00"
 	}
+},
+"Alert": {
+		"title_info": "Sorry, site under development"
 }
 }

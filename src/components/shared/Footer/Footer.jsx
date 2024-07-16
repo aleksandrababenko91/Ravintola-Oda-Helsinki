@@ -9,8 +9,7 @@ import {socials} from './items';
 import Menu from './Menu/Menu';
 import Logo from './Logo/Logo';
 import { useTranslations } from "next-intl";
-
-
+import UseAlert from '../UseAlert/UseAlert';
 
 export default function Footer () {
   const t = useTranslations("Footer.schedule");
@@ -48,6 +47,7 @@ export default function Footer () {
           </ul>
         </div>
       </div>
+      <UseAlert />
     </footer>
   )
 }

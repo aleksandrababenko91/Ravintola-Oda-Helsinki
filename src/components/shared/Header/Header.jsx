@@ -5,6 +5,8 @@ import styles from "./Header.module.scss";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 import Logo from '../Logo/Logo';
 import TranslationButton from '../../TranslationButton/TranslationButton';
+import UseAlert from '../UseAlert/UseAlert';
+
 
 const Header = () => {
   const t = useTranslations("Header");
@@ -16,6 +18,7 @@ const Header = () => {
         <div className={styles.actions}>
         <TranslationButton />
         </div>
+        <UseAlert />
       </div>
       <BurgerMenu />
     </header>
