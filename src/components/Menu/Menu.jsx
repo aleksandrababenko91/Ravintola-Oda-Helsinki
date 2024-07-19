@@ -1,27 +1,13 @@
 import React from 'react';
 import MenuCard from './MenuCard/MenuCard';
-import GetSpecialMenuCardsInfo from './MenuCard/MenuCard';
-import GetStartersCardsInfo from './MenuCard/MenuCard';
-import GetMainDishesCardsInfo from './MenuCard/MenuCard';
-import GetGeorgiaBreadCardsInfo from './MenuCard/MenuCard';
-import GetStewDishesCardsInfo from './MenuCard/MenuCard';
-import GetSideDishesCardsInfo from './MenuCard/MenuCard';
-import GetDessertsCardsInfo from './MenuCard/MenuCard';
-import GetSaucesCardsInfo from './MenuCard/MenuCard';
+import GetMenuCardsInfo from './MenuCard/MenuCard';
 import { useTranslations } from 'next-intl';
 
 
 
 export default function  MenuPage () {
   const t = useTranslations('Menu');
-  const specialMenu = GetSpecialMenuCardsInfo();
-  const starters = GetStartersCardsInfo();
-  const mainDishes = GetMainDishesCardsInfo();
-  const stewDishes = GetStewDishesCardsInfo();
-  const georgianBread = GetGeorgiaBreadCardsInfo();
-  const sideDishes = GetSideDishesCardsInfo();
-  const desserts = GetDessertsCardsInfo();
-  const sauses = GetSaucesCardsInfo();
+  const menuCards = GetMenuCardsInfo();
   return(
     <section className={styles.section}>
       <div className={styles.menu}>

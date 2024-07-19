@@ -7,6 +7,63 @@
 	"Main": {	
 			"reservation": "Reservation"
 },
+"Menu": {
+	"menu_1": {
+		"name": "",
+		"dish1": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish2": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish13": {
+			"title": "",
+			"description": "",
+			"price": ""
+		}
+	},
+	"menu_2": {
+		"name": "",
+		"dish1": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish2": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish13": {
+			"title": "",
+			"description": "",
+			"price": ""
+		}
+	},
+	"menu_3": {
+		"name": "",
+		"dish1": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish2": {
+			"title": "",
+			"description": "",
+			"price": ""
+		},
+		"dish3": {
+			"title": "",
+			"description": "",
+			"price": ""
+		}
+	}
+},
+
 "Footer": {
 	"schedule": {
 			"opening": "Opening Hours",
